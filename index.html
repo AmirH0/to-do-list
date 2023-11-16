@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="alert-box">
+        <p>empty or <br> less than 4 letter</p>
+    </div>
+    <div class="main-container">
+        <div>
+            <form action="" class="myform">
+                <input type="text" class="input-task" maxlength="12" placeholder="">
+                <button class="Add-task">Add</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <ul class="task-list">
+                <!-- <li>
+                    <p class="task-txt">li number 1</p>
+                    <div>
+                        <button class="li-btn-e" onclick="DeleteTask(this)">Edit</button>
+                        <button class="li-btn">Delete</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="edite-container">
+        <input type="text" class="edite-input">
+        <div>
+            <button class="edite-btn-submit btn" onclick="edittaskvalue()">edit</button>
+            <button class="btn" onclick="canselEdit()">cancel</button>
+        </div>
+    </div>
+
+    <p style="
+    position: absolute; bottom: 10px; left: 10px; color: white;
+    ">Amir HS</p>
+    <script src="./JS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --green: #16796f;
+  --blueGreen: #7cb7af;
+  --light-green: #cadedf;
+  --gray: #9ca89e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-container {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 15px 0px rgb(24, 24, 24);
+}
+.myform {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-task {
+  outline: 2px solid var(--green);
+  background-color: var(--light-green);
+  border: none;
+  height: 35px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 1rem;
+  border-radius: 0.5rem;
+  width: 200px;
+  margin-right: 1rem;
+}
+
+.Add-task {
+  background-color: var(--green);
+  padding: 11px 20px;
+  border-radius: 0.5rem;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--light-green);
+  cursor: pointer;
+}
+
+.list-container {
+  margin-top: 60px;
+  /* padding: 1rem 0rem; */
+  width: 100%;
+}
+ul {
+}
+ul li {
+  /* background-color: var(--green); */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.li-btn {
+  background-color: var(--light-green);
+  border: 2px solid var(--green);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.li-btn-e {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--light-green);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.task-txt {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.task-txt:hover {
+  text-decoration: line-through white;
+}
+
+.edite-container {
+  background-color: var(--green);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 1rem;
+  padding: 2rem;
+  /* display: none; */
+  z-index: 1000;
+}
+.edite-container > div {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.edite-input {
+  outline: 2px solid var(--green);
+  background-color: var(--light-green);
+  border: none;
+  height: 35px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 1rem;
+  border-radius: 0.5rem;
+  width: 200px;
+  margin-right: 1rem;
+}
+.done {
+  text-decoration: line-through white;
+}
+.btn {
+  background-color: var(--blueGreen);
+  border: 2px solid var(--blueGreen);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.alert-box {
+  padding: 2rem;
+  background-color: rgb(157, 22, 22);
+  width: 200px;
+  border-radius: 1rem;
+  position: absolute;
+  top: -130px;
+  transition: 1s ease all;
+}
